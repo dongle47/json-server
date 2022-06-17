@@ -36,7 +36,7 @@ const randomStudentList = (cityList, numberOfStudents) => {
     // random data
     //const cityList = JSON.parse('./cities.json')
     var cityList = JSON.parse(fs.readFileSync('cities.json', 'utf8'));
-    const studentList = randomStudentList(cityList, 10);
+    const studentList = randomStudentList(cityList, 100);
 
     // prepare db object
     const db = [...studentList];
