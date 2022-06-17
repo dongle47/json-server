@@ -1,36 +1,48 @@
-const faker = require('faker')
-const fs = require('fs')
+//import cityList from './cities';
+
+const faker = require("faker")
+const fs = require("fs")
 
 faker.locale = 'vi'
 
-const randomCategoryList = (n) => {
-    if (n <= 0) {
-        return []
+const randomStudentList = (cityList, numberOfStudents) => {
+    if (numberOfStudents <= 0) return [];
+
+    const studentList = [];
+
+    // random data
+    for (const city of cityList) {
+        Array.from(new Array(numberOfStudents)).forEach(() => {
+            const student = {
+                id: faker.random.uuid(),
+                name: faker.name.findName(),
+                age: faker.datatype.number({ 'min': 18, 'max': 25 }),
+                mark: faker.datatype.number({ 'min': 0, 'max': 10 }),
+                gender: faker.name.gender(true),
+                createdAt: Date.now(),
+                updatedAt: Date.now(),
+                city: city.code,
+            };
+
+            studentList.push(student);
+        });
     }
-    const citiesList = []
 
-    Array.from(new Array(n)).forEach(() => {
-        const cities = {
-            id: faker.datatype.uuid(),
-            name: faker.commerce.department(),
-            createdAt: Date.now(),
-            updatedAt: Date.now()
-        }
-        categoryList.push(cities)
-    })
-    return citiesList
-}
+    return studentList;
+};
 
+// IFFE
 (() => {
-    const citiesList = randomcitiesList(4)
-    const db = {
-        categories: citiesList,
-        products: [],
-        profile: {
-            name: "Po",
-        }
-    }
-    fs.writeFile('db.json', JSON.stringify(db), () => {
-        console.log("Generate data successfully =)))");
+    // random data
+    //const cityList = JSON.parse('./cities.json')
+    var cityList = JSON.parse(fs.readFileSync('cities.json', 'utf8'));
+    const studentList = randomStudentList(cityList, 10);
+
+    // prepare db object
+    const db = [...studentList];
+
+    // write db object to db.json
+    fs.writeFile("students.json", JSON.stringify(db), () => {
+        console.log("Generate data successfully");
     });
-})()
+})();

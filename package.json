@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "generate-data": "node generate-data.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,6 @@
     "node": "16.13.1"
   },
   "devDependencies": {
-    "faker": "^6.6.6"
+    "faker": "^5.5.3"
   }
 }
