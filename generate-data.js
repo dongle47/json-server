@@ -39,10 +39,13 @@ const randomStudentList = (cityList, numberOfStudents) => {
     const studentList = randomStudentList(cityList, 100);
 
     // prepare db object
-    const db = [...studentList];
+    const db = {
+        cities: cityList,
+        students: studentList
+    }
 
     // write db object to db.json
-    fs.writeFile("students.json", JSON.stringify(db), () => {
+    fs.writeFile("db.json", JSON.stringify(db), () => {
         console.log("Generate data successfully");
     });
 })();
