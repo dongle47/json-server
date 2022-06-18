@@ -1,26 +1,12 @@
-const express = require('express')
-const jsonServer = require('json-server');
-const app = express()
+var express = require('express');
+var jsonServer = require('json-server');
 
-let port = process.env.PORT || 3000;
+var server = express();
+// ...
 
-app.get("/", (req, res) => {
-    res.send("Hello world")
-})
+// You may want to mount JSON Server on a specific end-point, for example /api
+// Optiona,l except if you want to have JSON Server defaults
+// server.use('/api', jsonServer.defaults()); 
+server.use('/api', jsonServer.router('db.json'));
 
-// const citiesData = require("./cities.json")
-// app.get("/cities", (req, res) => {
-//     res.send(citiesData)
-// })
-
-// const studentsData = require("./students.json")
-// app.get("/students", (req, res) => {
-//     res.send(studentsData)
-// })
-
-app.use('/cities', jsonServer.router('cities.json'));
-app.use('/students', jsonServer.router('students.json'));
-
-app.listen(port, () => {
-    console.log(`Example app is listening on port http://localhost:${port}`)
-})
+server.listen(3000);
