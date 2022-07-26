@@ -1,4 +1,3 @@
-//import cityList from './cities';
 
 const faker = require("faker")
 const fs = require("fs")
@@ -31,21 +30,60 @@ const randomStudentList = (cityList, numberOfStudents) => {
     return studentList;
 };
 
-// IFFE
-(() => {
+const randomProductList = (numberOfProducts) => {
+    if (numberOfProducts <= 0) return [];
+
+    const productList = [];
+
     // random data
-    //const cityList = JSON.parse('./cities.json')
-    var cityList = JSON.parse(fs.readFileSync('cities.json', 'utf8'));
-    const studentList = randomStudentList(cityList, 100);
+    Array.from(new Array(numberOfProducts)).forEach(() => {
+        const product = {
+            id: faker.random.uuid(),
+            image: faker.image.technics(),
+            name: faker.commerce.productName(),
+            rate: faker.datatype.number({ 'min': 0, 'max': 5 }),
+            price: faker.commerce.price(),
+            discount: faker.datatype.number({ 'min': 0, 'max': 100 }),
+            sold: faker.datatype.number({ 'min': 0, 'max': 100 }),
+        };
+
+        productList.push(product);
+    });
+
+    return productList;
+};
+
+// IFFE
+// (() => {
+//     // random data
+//     //const cityList = JSON.parse('./cities.json')
+//     var cityList = JSON.parse(fs.readFileSync('cities.json', 'utf8'));
+//     var studentList = JSON.parse(fs.readFileSync('students.json', 'utf8'));
+//     const productList = randomProductList(100);
+
+//     // prepare db object
+//     const db = {
+//         cities: cityList,
+//         students: studentList,
+//         products: productList,
+//     }
+
+//     // write db object to db.json
+//     fs.writeFile("db.json", JSON.stringify(db), () => {
+//         console.log("Generate data successfully");
+//     });
+// })();
+
+(() => {
+    const productList = randomProductList(100);
 
     // prepare db object
     const db = {
-        cities: cityList,
-        students: studentList
+        products: productList,
     }
 
     // write db object to db.json
-    fs.writeFile("db.json", JSON.stringify(db), () => {
+    fs.writeFile("products.json", JSON.stringify(db), () => {
         console.log("Generate data successfully");
     });
 })();
