@@ -184,8 +184,6 @@ const randomMyOrderList = (numberOfOrder) => {
 };
 
 
-
-
 (() => {
 
     const productList = randomProductList(100);
@@ -198,12 +196,25 @@ const randomMyOrderList = (numberOfOrder) => {
 
     const myOrderList = randomMyOrderList(10)
 
+    var aboutTiki = JSON.parse(fs.readFileSync('./static-data/aboutTiki.json', 'utf8'));
+    var categorySpecify = JSON.parse(fs.readFileSync('./static-data/categorySpecify.json', 'utf8'));
+    var quickLink = JSON.parse(fs.readFileSync('./static-data/quickLink.json', 'utf8'));
+    var sliderKhuyenMai = JSON.parse(fs.readFileSync('./static-data/sliderKhuyenMai.json', 'utf8'));
+    var sliderThuongHieu = JSON.parse(fs.readFileSync('./static-data/sliderThuongHieu.json', 'utf8'));
+    var supportCustomer = JSON.parse(fs.readFileSync('./static-data/supportCustomer.json', 'utf8'));
+
     const db = {
         products: productList,
         notifications: notificationList,
         coupons: couponList,
         myReview: myReviewList,
         myOrder: myOrderList,
+        aboutTiki: aboutTiki,
+        categorySpecify: categorySpecify,
+        quickLink: quickLink,
+        sliderKhuyenMai: sliderKhuyenMai,
+        sliderThuongHieu: sliderThuongHieu,
+        supportCustomer: supportCustomer,
 
     }
 
