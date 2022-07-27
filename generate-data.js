@@ -223,6 +223,7 @@ const randomMyOrderList = (numberOfOrder) => {
     var quickLink = JSON.parse(fs.readFileSync('./static-data/quickLink.json', 'utf8'));
     var sliderKhuyenMai = JSON.parse(fs.readFileSync('./static-data/sliderKhuyenMai.json', 'utf8'));
     var sliderThuongHieu = JSON.parse(fs.readFileSync('./static-data/sliderThuongHieu.json', 'utf8'));
+    var suggestions = JSON.parse(fs.readFileSync('./static-data/suggestions.json', 'utf8'));
     var supportCustomer = JSON.parse(fs.readFileSync('./static-data/supportCustomer.json', 'utf8'));
 
     const db = {
@@ -236,6 +237,7 @@ const randomMyOrderList = (numberOfOrder) => {
         quickLink: quickLink,
         sliderKhuyenMai: sliderKhuyenMai,
         sliderThuongHieu: sliderThuongHieu,
+        suggestions: suggestions,
         supportCustomer: supportCustomer,
 
     }
