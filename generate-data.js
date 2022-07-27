@@ -142,6 +142,28 @@ const randomMyReviewList = (numberOfReview) => {
 const randomMyOrderList = (numberOfOrder) => {
     if (numberOfOrder <= 0) return [];
 
+    const randomProductOrder = (numberOfProducts) => {
+        if (numberOfProducts <= 0) return [];
+
+        const productList = [];
+
+        // random data
+        Array.from(new Array(numberOfProducts)).forEach(() => {
+            const product = {
+                id: faker.random.uuid(),
+                image: faker.image.technics(),
+                name: faker.commerce.productName(),
+                price: faker.commerce.price(),
+                discount: faker.datatype.number({ 'min': 0, 'max': 100 }),
+                quantity: faker.datatype.number({ 'min': 0, 'max': 100 }),
+            };
+
+            productList.push(product);
+        });
+
+        return productList;
+    };
+
     const orderType = [
         {
             id: 1,
@@ -174,7 +196,7 @@ const randomMyOrderList = (numberOfOrder) => {
             id: faker.random.uuid(),
             type: orderType[faker.datatype.number({ 'min': 0, 'max': 4 })],
             totalPrice: faker.datatype.number({ 'min': 100000, 'max': 10000000 }),
-            products: randomProductList(faker.datatype.number({ 'min': 1, 'max': 5 }))
+            products: randomProductOrder(faker.datatype.number({ 'min': 1, 'max': 5 }))
 
         };
         orderList.push(order);
