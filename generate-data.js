@@ -16,6 +16,20 @@ function formatDate(date) {
     ].join('/');
 }
 
+const imgRandom = [
+    faker.image.abstract(),
+    faker.image.animals(),
+    faker.image.cats(),
+    faker.image.city(),
+    faker.image.fashion(),
+    faker.image.food(),
+    faker.image.nature(),
+    faker.image.nightlife(),
+    faker.image.transport(),
+    faker.image.technics(),
+    faker.image.sports(),
+    faker.image.people(),
+]
 
 const randomProductList = (numberOfProducts) => {
     if (numberOfProducts <= 0) return [];
@@ -26,7 +40,7 @@ const randomProductList = (numberOfProducts) => {
     Array.from(new Array(numberOfProducts)).forEach(() => {
         const product = {
             id: faker.random.uuid(),
-            image: faker.image.technics(),
+            image: imgRandom[faker.datatype.number({ 'min': 0, 'max': 11 })],
             name: faker.commerce.productName(),
             rate: faker.datatype.number({ 'min': 0, 'max': 5 }),
             price: faker.commerce.price(),
@@ -95,7 +109,7 @@ const randomCouponList = (numberOfCoupon) => {
             id: faker.random.uuid(),
             publisher: faker.company.companyName(),
             title: faker.random.words(faker.datatype.number({ 'min': 2, 'max': 4 })),
-            subtitle: faker.random.words[faker.datatype.number({ 'min': 5, 'max': 10 })],
+            subtitle: faker.random.words(faker.datatype.number({ 'min': 5, 'max': 10 })),
             expired: formatDate(faker.date.between('2020-01-01', '2022-01-01')),
             image: imageLink[faker.datatype.number({ 'min': 0, 'max': 6 })],
             link: ''
@@ -110,27 +124,29 @@ const randomCouponList = (numberOfCoupon) => {
 const randomMyReviewList = (numberOfReview) => {
     if (numberOfReview <= 0) return [];
 
+    const imgRateList = (n) => {
+        var imgList = []
+        for (let i = 0; i < n; i++) {
+            imgList.push(imgRandom[faker.datatype.number({ 'min': 0, 'max': 11 })])
+        }
+        return imgList
+    }
+
+    const satisfy = ['Rất hài lòng', 'Hài lòng', 'Tạm hài lòng', 'Không hài lòng', 'Rất không hài lòng']
+
     const reviewList = [];
 
     // random data
     Array.from(new Array(numberOfReview)).forEach(() => {
-
-        const randomImgList = (n) => {
-            const imgList = []
-            for (let i = 0; i < n; i++) {
-                imgList.push(faker.image.abstract())
-            }
-            return imgList
-        }
-
         const review = {
             id: faker.random.uuid(),
             productName: faker.commerce.productName(),
             productImg: faker.image.technics(),
             storeName: faker.company.companyName(),
             rating: faker.datatype.number({ 'min': 0, 'max': 5 }),
+            satisfy: satisfy[faker.datatype.number({ 'min': 0, 'max': 4 })],
             content: faker.lorem.paragraph(),
-            imgRate: randomImgList(faker.datatype.number({ 'min': 0, 'max': 5 }))
+            imgRate: imgRateList(faker.datatype.number({ 'min': 0, 'max': 5 }))
 
         };
         reviewList.push(review);
@@ -151,9 +167,9 @@ const randomMyOrderList = (numberOfOrder) => {
         Array.from(new Array(numberOfProducts)).forEach(() => {
             const product = {
                 id: faker.random.uuid(),
-                image: faker.image.technics(),
+                image: imgRandom[faker.datatype.number({ 'min': 0, 'max': 11 })],
                 name: faker.commerce.productName(),
-                price: faker.commerce.price(),
+                price: faker.datatype.number({ 'min': 1000, 'max': 10000000 }),
                 discount: faker.datatype.number({ 'min': 0, 'max': 100 }),
                 quantity: faker.datatype.number({ 'min': 0, 'max': 100 }),
             };
