@@ -43,7 +43,7 @@ const randomProductList = (numberOfProducts) => {
             image: imgRandom[faker.datatype.number({ 'min': 0, 'max': 11 })],
             name: faker.commerce.productName(),
             rate: faker.datatype.number({ 'min': 0, 'max': 5 }),
-            price: faker.commerce.price(),
+            price: faker.datatype.number({ 'min': 1000, 'max': 10000000 }),
             discount: faker.datatype.number({ 'min': 0, 'max': 100 }),
             sold: faker.datatype.number({ 'min': 0, 'max': 100 }),
         };
