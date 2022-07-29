@@ -112,6 +112,7 @@ const randomCouponList = (numberOfCoupon) => {
             subtitle: faker.random.words(faker.datatype.number({ 'min': 5, 'max': 10 })),
             expired: formatDate(faker.date.between('2020-01-01', '2022-01-01')),
             image: imageLink[faker.datatype.number({ 'min': 0, 'max': 6 })],
+            unit: faker.datatype.number({ 'min': 0, 'max': 10 }),
             link: ''
 
         };
@@ -221,6 +222,27 @@ const randomMyOrderList = (numberOfOrder) => {
     return orderList;
 };
 
+const randomAddressList = (numberOfAddress) => {
+    if (numberOfAddress <= 0) return [];
+
+    const addressList = [];
+
+    // random data
+    Array.from(new Array(numberOfAddress)).forEach(() => {
+
+        const address = {
+            id: faker.random.uuid(),
+            name: faker.random.words(faker.datatype.number({ 'min': 2, 'max': 5 })),
+            address: faker.random.words(faker.datatype.number({ 'min': 10, 'max': 50 })),
+            phone: faker.phone.phoneNumber()
+
+        };
+        addressList.push(address);
+    });
+
+    return addressList;
+}
+
 
 (() => {
 
@@ -233,6 +255,8 @@ const randomMyOrderList = (numberOfOrder) => {
     const myReviewList = randomMyReviewList(10)
 
     const myOrderList = randomMyOrderList(10)
+
+    const addressList = randomAddressList(10)
 
     var aboutTiki = JSON.parse(fs.readFileSync('./static-data/aboutTiki.json', 'utf8'));
     var categorySpecify = JSON.parse(fs.readFileSync('./static-data/categorySpecify.json', 'utf8'));
@@ -248,6 +272,7 @@ const randomMyOrderList = (numberOfOrder) => {
         coupons: couponList,
         myReview: myReviewList,
         myOrder: myOrderList,
+        address: addressList,
         aboutTiki: aboutTiki,
         categorySpecify: categorySpecify,
         quickLink: quickLink,
