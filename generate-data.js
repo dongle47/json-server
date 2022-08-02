@@ -31,10 +31,40 @@ const imgRandom = [
     faker.image.people(),
 ]
 
+const ramdomImgList = (n) => {
+    var imgList = []
+    for (let i = 0; i < n; i++) {
+        imgList.push(imgRandom[faker.datatype.number({ 'min': 0, 'max': 11 })])
+    }
+    return imgList
+}
+
 const randomProductList = (numberOfProducts) => {
     if (numberOfProducts <= 0) return [];
 
     const productList = [];
+
+    var category = JSON.parse(fs.readFileSync('./static-data/category.json', 'utf8'));
+    var brand = JSON.parse(fs.readFileSync('./static-data/brand.json', 'utf8'));
+
+
+    var detailProduct = () => {
+        return {
+            images: ramdomImgList(faker.datatype.number({ 'min': 3, 'max': 10 })),
+            options: category[faker.datatype.number({ 'min': 0, 'max': 1 })].options,
+            specifications: [
+                {
+                    key: 'Xuất xứ',
+                    value: 'Việt Nam'
+                },
+                {
+                    key: 'Thương hiệu',
+                    value: brand[faker.datatype.number({ 'min': 0, 'max': 1 })]
+                }
+            ],
+            description: faker.random.words(faker.datatype.number({ 'min': 30, 'max': 500 }))
+        }
+    }
 
     // random data
     Array.from(new Array(numberOfProducts)).forEach(() => {
@@ -46,6 +76,7 @@ const randomProductList = (numberOfProducts) => {
             price: faker.datatype.number({ 'min': 1000, 'max': 10000000 }),
             discount: faker.datatype.number({ 'min': 0, 'max': 100 }),
             sold: faker.datatype.number({ 'min': 0, 'max': 100 }),
+            details: detailProduct()
         };
 
         productList.push(product);

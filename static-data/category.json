@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Quẩn áo",
+        "options": {
+            "colors": {
+                "id": 1,
+                "name": "Màu sắc",
+                "list": [
+                    {
+                        "id": 1,
+                        "name": "Đen"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Đỏ"
+                    }
+                ]
+            },
+            "sizes": {
+                "id": 1,
+                "name": "Kích cỡ",
+                "list": [
+                    {
+                        "id": 1,
+                        "name": "M"
+                    },
+                    {
+                        "id": 2,
+                        "name": "L"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Điện thoại",
+        "options": {
+            "colors": {
+                "id": 1,
+                "name": "Màu sắc",
+                "list": [
+                    {
+                        "id": 1,
+                        "name": "Trắng"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Xanh lá"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Đen"
+                    }
+                ]
+            },
+            "capacity": {
+                "id": 2,
+                "name": "Dung lượng",
+                "list": [
+                    {
+                        "id": 1,
+                        "name": "128Gb"
+                    },
+                    {
+                        "id": 2,
+                        "name": "256GB"
+                    }
+                ]
+            }
+        }
+    }
+]
