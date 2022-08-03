@@ -44,6 +44,9 @@ const randomProductList = (numberOfProducts) => {
 
     const productList = [];
 
+    const country = ['Việt Nam', 'Mỹ', 'Thái Lan']
+
+
     var category = JSON.parse(fs.readFileSync('./static-data/category.json', 'utf8'));
     var brand = JSON.parse(fs.readFileSync('./static-data/brand.json', 'utf8'));
 
@@ -54,12 +57,14 @@ const randomProductList = (numberOfProducts) => {
             options: category[faker.datatype.number({ 'min': 0, 'max': 1 })].options,
             specifications: [
                 {
-                    key: 'Xuất xứ',
-                    value: 'Việt Nam'
+                    name: 'origins',
+                    display: 'Xuất xứ',
+                    value: country[faker.datatype.number({'min': 0, 'max': 2})]
                 },
                 {
-                    key: 'Thương hiệu',
-                    value: brand[faker.datatype.number({ 'min': 0, 'max': 1 })]
+                    name:'brands',
+                    display: 'Thương hiệu',
+                    value: brand[faker.datatype.number({ 'min': 0, 'max': 3 })].name
                 }
             ],
             description: faker.random.words(faker.datatype.number({ 'min': 30, 'max': 500 }))

@@ -2,10 +2,11 @@
     {
         "id": 1,
         "name": "Quẩn áo",
-        "options": {
-            "colors": {
+        "options": [
+            {
                 "id": 1,
-                "name": "Màu sắc",
+                "name": "colors",
+                "display": "Màu sắc",
                 "list": [
                     {
                         "id": 1,
@@ -17,9 +18,10 @@
                     }
                 ]
             },
-            "sizes": {
+            {
                 "id": 1,
-                "name": "Kích cỡ",
+                "name": "sizes",
+                "display": "Kích cỡ",
                 "list": [
                     {
                         "id": 1,
@@ -31,15 +33,16 @@
                     }
                 ]
             }
-        }
+        ]
     },
     {
         "id": 2,
         "name": "Điện thoại",
-        "options": {
-            "colors": {
+        "options": [
+             {
                 "id": 1,
-                "name": "Màu sắc",
+                "name": "colors",
+                "display": "Màu sắc",
                 "list": [
                     {
                         "id": 1,
@@ -55,9 +58,10 @@
                     }
                 ]
             },
-            "capacity": {
+            {
                 "id": 2,
-                "name": "Dung lượng",
+                "name": "capacity",
+                "display": "Dung lượng",
                 "list": [
                     {
                         "id": 1,
@@ -69,6 +73,6 @@
                     }
                 ]
             }
-        }
+        ]
     }
 ]
