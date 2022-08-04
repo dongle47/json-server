@@ -52,17 +52,19 @@ const randomProductList = (numberOfProducts) => {
 
 
     var detailProduct = () => {
+        const categoryProduct = category[faker.datatype.number({ 'min': 0, 'max': 1 })]
         return {
+            category: { id: categoryProduct.id, name: categoryProduct.name },
             images: ramdomImgList(faker.datatype.number({ 'min': 3, 'max': 10 })),
-            options: category[faker.datatype.number({ 'min': 0, 'max': 1 })].options,
+            options: categoryProduct.options,
             specifications: [
                 {
                     name: 'origins',
                     display: 'Xuất xứ',
-                    value: country[faker.datatype.number({'min': 0, 'max': 2})]
+                    value: country[faker.datatype.number({ 'min': 0, 'max': 2 })]
                 },
                 {
-                    name:'brands',
+                    name: 'brands',
                     display: 'Thương hiệu',
                     value: brand[faker.datatype.number({ 'min': 0, 'max': 3 })].name
                 }
