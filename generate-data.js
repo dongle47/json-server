@@ -284,7 +284,9 @@ const randomAddressList = (numberOfAddress) => {
 
 (() => {
 
-    const productList = randomProductList(100);
+    // const productList = randomProductList(100);
+
+    var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
 
     const notificationList = randomNotificationList(30)
 
