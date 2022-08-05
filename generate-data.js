@@ -294,7 +294,9 @@ const randomAddressList = (numberOfAddress) => {
 
     const myReviewList = randomMyReviewList(10)
 
-    const myOrderList = randomMyOrderList(10)
+    // const myOrderList = randomMyOrderList(10)
+    const myOrderList = []
+
 
     const addressList = randomAddressList(10)
 
