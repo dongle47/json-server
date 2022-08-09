@@ -286,9 +286,6 @@ const randomAddressList = (numberOfAddress) => {
 
     // const productList = randomProductList(100);
 
-    var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
-
-    var myOrderList = JSON.parse(fs.readFileSync('./static-data/myOrders.json', 'utf8'));
 
     const notificationList = randomNotificationList(30)
 
@@ -298,6 +295,9 @@ const randomAddressList = (numberOfAddress) => {
 
     const addressList = randomAddressList(10)
 
+    var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
+    var categoryList = JSON.parse(fs.readFileSync('./static-data/categories.json', 'utf8'));
+    var myOrderList = JSON.parse(fs.readFileSync('./static-data/myOrders.json', 'utf8'));
     var aboutTiki = JSON.parse(fs.readFileSync('./static-data/aboutTiki.json', 'utf8'));
     var categorySpecify = JSON.parse(fs.readFileSync('./static-data/categorySpecify.json', 'utf8'));
     var quickLink = JSON.parse(fs.readFileSync('./static-data/quickLink.json', 'utf8'));
@@ -309,6 +309,7 @@ const randomAddressList = (numberOfAddress) => {
 
     const db = {
         products: productList,
+        categories: categoryList,
         notifications: notificationList,
         coupons: couponList,
         myReview: myReviewList,
