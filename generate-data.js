@@ -305,13 +305,14 @@ const randomAddressList = (numberOfAddress) => {
     var sliderThuongHieu = JSON.parse(fs.readFileSync('./static-data/sliderThuongHieu.json', 'utf8'));
     var suggestions = JSON.parse(fs.readFileSync('./static-data/suggestions.json', 'utf8'));
     var supportCustomer = JSON.parse(fs.readFileSync('./static-data/supportCustomer.json', 'utf8'));
+    var wishList = JSON.parse(fs.readFileSync('./static-data/wishList.json', 'utf8'));
 
     const db = {
         products: productList,
         notifications: notificationList,
         coupons: couponList,
         myReview: myReviewList,
-        myOrder: myOrderList,
+        myOrders: myOrderList,
         address: addressList,
         aboutTiki: aboutTiki,
         categorySpecify: categorySpecify,
@@ -320,7 +321,7 @@ const randomAddressList = (numberOfAddress) => {
         sliderThuongHieu: sliderThuongHieu,
         suggestions: suggestions,
         supportCustomer: supportCustomer,
-
+        wishList: wishList,
     }
 
     fs.writeFile("db.json", JSON.stringify(db), () => {
