@@ -1,6 +1,11 @@
+
+
 const jsonServer = require('json-server');
-const faker = require("faker")
+const faker = require('faker')
 const queryString = require('query-string');
+
+faker.locale = 'vi'
+
 
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
