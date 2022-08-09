@@ -307,12 +307,14 @@ const randomAddressList = (numberOfAddress) => {
     var supportCustomer = JSON.parse(fs.readFileSync('./static-data/supportCustomer.json', 'utf8'));
     var wishList = JSON.parse(fs.readFileSync('./static-data/wishList.json', 'utf8'));
 
+    var myPurchased = []
+    var myReviews = []
+
     const db = {
         products: productList,
         categories: categoryList,
         notifications: notificationList,
         coupons: couponList,
-        myReview: myReviewList,
         myOrders: myOrderList,
         address: addressList,
         aboutTiki: aboutTiki,
@@ -323,6 +325,11 @@ const randomAddressList = (numberOfAddress) => {
         suggestions: suggestions,
         supportCustomer: supportCustomer,
         wishList: wishList,
+
+        myPurchased: myPurchased,
+        myReviews: myReviews,
+
+
     }
 
     fs.writeFile("db.json", JSON.stringify(db), () => {
