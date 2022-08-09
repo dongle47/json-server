@@ -4,6 +4,9 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
+const faker = require("faker")
+
+
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
 
@@ -19,6 +22,7 @@ server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now();
     req.body.updatedAt = Date.now();
+    req.body.id = faker.random.uuid()
   } else if (req.method === 'PATCH') {
     req.body.updatedAt = Date.now();
   }
@@ -44,7 +48,10 @@ router.render = (req, res) => {
         _limit: Number.parseInt(queryParams._limit) || 10,
         _totalRows: Number.parseInt(totalCountHeader),
       },
+
     };
+
+
 
     return res.jsonp(result);
   }
