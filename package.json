@@ -13,14 +13,13 @@
   "dependencies": {
     "express": "^4.18.1",
     "json-server": "^0.17.0",
-    "query-string": "^7.1.1"
+    "query-string": "^7.1.1",
+    "faker": "^5.5.3"
   },
   "engines": {
     "node": "16.13.1"
   },
   "devDependencies": {
-    "@types/faker": "^6.6.9",
-    "faker": "^5.5.3",
     "nodemon": "^2.0.16"
   }
 }
