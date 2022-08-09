@@ -288,15 +288,13 @@ const randomAddressList = (numberOfAddress) => {
 
     var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
 
+    var myOrderList = JSON.parse(fs.readFileSync('./static-data/myOrders.json', 'utf8'));
+
     const notificationList = randomNotificationList(30)
 
     const couponList = randomCouponList(40)
 
     const myReviewList = randomMyReviewList(10)
-
-    // const myOrderList = randomMyOrderList(10)
-    const myOrderList = []
-
 
     const addressList = randomAddressList(10)
 

@@ -1,0 +1,42 @@
+[
+    {
+        "type": {
+            "id": 3,
+            "name": "Đang vận chuyển"
+        },
+        "feeShip": 40000,
+        "totalPrice": 19500000,
+        "products": [
+            {
+                "choose": true,
+                "id": "e5d78b5de09241b88821f0e68752d350",
+                "name": "Apple iPad 10.2-inch (9th Gen) Wi-Fi, 2021",
+                "image": "https://salt.tikicdn.com/ts/product/44/84/b5/99190012171edee77674793a61c5a7e8.png",
+                "price": 10990000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "fc3ceb70c1244e568d7a3648f4804c6b",
+                "name": "Điện Thoại Oppo A94 (8GB/128G) - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/media/catalog/producttmp/ee/9d/31/5c184fb4b3c1f0eb901ad9fbcb80e0f0.jpg",
+                "price": 5990000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "2f015af10a2f413a8aee08250fdae0e0",
+                "name": "Điện thoại Xiaomi Redmi 9A (2GB/32GB) - Hàng chính hãng",
+                "image": "https://salt.tikicdn.com/ts/product/0c/cd/34/0b6abf38aaba0a3507c7c2610a15dc9f.jpg",
+                "price": 2490000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660009154249,
+        "updatedAt": 1660009154249,
+        "id": 1
+    }
+]
