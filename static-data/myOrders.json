@@ -38,5 +38,40 @@
         "createdAt": 1660009154249,
         "updatedAt": 1660009154249,
         "id": 1
+    },
+    {
+        "idUser": "20b80ec5-300b-4a33-90c9-e846df058db1",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 7020000,
+        "discount": 0,
+        "products": [
+            {
+                "choose": true,
+                "id": "939f6e37f96a47439d2c3fd3ccd787e1",
+                "name": "Điện thoại Samsung Galaxy A32 (6GB/128GB) - Hàng Chính Hãng - Đã kích hoạt bảo hành điện tử",
+                "image": "https://salt.tikicdn.com/ts/product/2f/bb/a1/8ca12b2275e531e73e2efdaaf97fc2ba.jpg",
+                "price": 6990000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660145027569,
+        "updatedAt": 1660145027569,
+        "id": "016da295-67bf-4b8c-bfbd-b61655215526"
     }
 ]

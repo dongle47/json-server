@@ -291,8 +291,6 @@ const randomAddressList = (numberOfAddress) => {
 
     const couponList = randomCouponList(40)
 
-    const myReviewList = randomMyReviewList(10)
-
     const addressList = randomAddressList(10)
 
     var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
@@ -306,9 +304,7 @@ const randomAddressList = (numberOfAddress) => {
     var suggestions = JSON.parse(fs.readFileSync('./static-data/suggestions.json', 'utf8'));
     var supportCustomer = JSON.parse(fs.readFileSync('./static-data/supportCustomer.json', 'utf8'));
     var wishList = JSON.parse(fs.readFileSync('./static-data/wishList.json', 'utf8'));
-
-    var myPurchased = []
-    var myReviews = []
+    var myReviews = JSON.parse(fs.readFileSync('./static-data/myReviews.json', 'utf8'));
 
     const db = {
         products: productList,
@@ -325,8 +321,6 @@ const randomAddressList = (numberOfAddress) => {
         suggestions: suggestions,
         supportCustomer: supportCustomer,
         wishList: wishList,
-
-        myPurchased: myPurchased,
         myReviews: myReviews,
 
 
