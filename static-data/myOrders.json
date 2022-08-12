@@ -73,5 +73,84 @@
         "createdAt": 1660145027569,
         "updatedAt": 1660145027569,
         "id": "016da295-67bf-4b8c-bfbd-b61655215526"
+    },
+    {
+        "idUser": "92a67bbf-b53e-403c-a973-aa52cc2e0860",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 314000,
+        "discount": 50000,
+        "products": [
+            {
+                "choose": true,
+                "id": "36112874dda0480a890651a0762f51c7",
+                "name": "Cây Cam Ngọt Của Tôi",
+                "image": "https://salt.tikicdn.com/ts/product/5e/18/24/2a6154ba08df6ce6161c13f4303fa19e.jpg",
+                "price": 108000,
+                "quantity": 3,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660275002387,
+        "updatedAt": 1660275002387,
+        "id": "ba22f305-adb2-42b2-b1b4-49e87da653c7"
+    },
+    {
+        "idUser": "92a67bbf-b53e-403c-a973-aa52cc2e0860",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 6819000,
+        "discount": 60000,
+        "products": [
+            {
+                "choose": true,
+                "id": "ce26fa2c026e4d0fb9011849c2ba420e",
+                "name": "Điện thoại thông minh Bphone A60, nhiếp ảnh điện toán, 2 sim, bảo mật  – Hàng chính hãng",
+                "image": "https://salt.tikicdn.com/ts/product/34/08/70/c6a367a5d604ed89550876e88d8f95b2.png",
+                "price": 6490000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "7a3ba35df4ca43ba8edacaa44542da99",
+                "name": "Bộ Chuyển Đổi USB Wifi TP-Link Archer T2U Plus Công Suất Cao AC600 - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/ts/product/61/75/66/bbe09e63ca8bac4e13f055348863fe42.jpg",
+                "price": 349000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660276257300,
+        "updatedAt": 1660276315574,
+        "id": "93871746-2918-4a1e-beef-02df93147301"
     }
 ]
