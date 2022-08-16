@@ -1,3 +1,552 @@
 [
- 
+    {
+        "idUser": "72dbacda-0da4-4b9b-abd9-3d8c2fdb123b",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": {
+            "id": "a7ce6ce7-babe-4a03-83a9-c66191676951",
+            "fullName": "Nguyễn Duy Dương",
+            "companyName": "Không",
+            "phoneNumber": "0312345687",
+            "province": {
+                "id": "79",
+                "name": "Thành phố Hồ Chí Minh",
+                "type": "Thành phố Trung ương",
+                "slug": "HOCHIMINH"
+            },
+            "district": {
+                "id": "769",
+                "name": "Thành phố Thủ Đức",
+                "type": "Thành phố",
+                "province": "79"
+            },
+            "commune": {
+                "id": "26842",
+                "name": "Phường Tăng Nhơn Phú A",
+                "type": "Phường",
+                "district": "769"
+            },
+            "addressDetail": "abced",
+            "addressType": {
+                "id": 1,
+                "addressTypeName": "Nhà Riêng"
+            }
+        },
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 35000,
+        "discount": 80000,
+        "products": [
+            {
+                "choose": true,
+                "id": "bb4a64e3e9864693b5c236876614fe03",
+                "name": "Hoàng Tử Bé (Tái Bản 2019)",
+                "slug": "hoang-tu-be-tai-ban-2019-p15267827",
+                "image": "https://salt.tikicdn.com/ts/product/5c/e7/68/26838e18d7f96d562d828980520019d2.jpg",
+                "price": 75000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660629625102,
+        "updatedAt": 1660629635578,
+        "id": "8e9b3e93-4640-4163-b919-d63896abe95d"
+    },
+    {
+        "idUser": "72dbacda-0da4-4b9b-abd9-3d8c2fdb123b",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": {
+            "id": "a7ce6ce7-babe-4a03-83a9-c66191676951",
+            "fullName": "Nguyễn Duy Dương",
+            "companyName": "Không",
+            "phoneNumber": "0312345687",
+            "province": {
+                "id": "79",
+                "name": "Thành phố Hồ Chí Minh",
+                "type": "Thành phố Trung ương",
+                "slug": "HOCHIMINH"
+            },
+            "district": {
+                "id": "769",
+                "name": "Thành phố Thủ Đức",
+                "type": "Thành phố",
+                "province": "79"
+            },
+            "commune": {
+                "id": "26842",
+                "name": "Phường Tăng Nhơn Phú A",
+                "type": "Phường",
+                "district": "769"
+            },
+            "addressDetail": "abced",
+            "addressType": {
+                "id": 1,
+                "addressTypeName": "Nhà Riêng"
+            }
+        },
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 59000,
+        "discount": 80000,
+        "products": [
+            {
+                "choose": true,
+                "id": "0baa459935254feb80fe60d2f4af9848",
+                "name": "Bàn chải nhà tắm, cọ bồn rửa Parroti Clever CR01",
+                "slug": "ban-chai-nha-tam-co-bon-rua-parroti-clever-cr01-p104110135",
+                "image": "https://salt.tikicdn.com/ts/product/13/fa/df/4ff5a01f99d7599c45b053aa56979f06.jpg",
+                "price": 99000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660630191469,
+        "updatedAt": 1660630285358,
+        "id": "eae19507-0120-458a-b350-f15782ffb2a6"
+    },
+    {
+        "idUser": "20b80ec5-300b-4a33-90c9-e846df058db1",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 4780000,
+        "discount": 0,
+        "products": [
+            {
+                "choose": true,
+                "id": "9fb4ca8325e34716bb4040474b1e8ff3",
+                "name": "Điện Thoại Xiaomi Redmi 10 4GB/128GB - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/ts/product/4a/be/ec/a65c067d6c22ae48eb3ea400247c4c0d.png",
+                "price": 4290000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "75ef119479bb430abf2d76c43c8ba735",
+                "name": "Thùng 24 Lon Nước Ngọt Có Gaz Mirinda Soda Kem Việt Quất (320ml/lon)",
+                "image": "https://salt.tikicdn.com/media/catalog/producttmp/30/16/14/d56b3302aa770b287b09c35f13be19a8.PNG",
+                "price": 230000,
+                "quantity": 2,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660630381051,
+        "updatedAt": 1660630396030,
+        "id": "2d72f9e6-ac51-4d4c-a1ed-a26c070627af"
+    },
+    {
+        "idUser": "72dbacda-0da4-4b9b-abd9-3d8c2fdb123b",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": {
+            "id": "a7ce6ce7-babe-4a03-83a9-c66191676951",
+            "fullName": "Nguyễn Duy Dương",
+            "companyName": "Không",
+            "phoneNumber": "0312345687",
+            "province": {
+                "id": "79",
+                "name": "Thành phố Hồ Chí Minh",
+                "type": "Thành phố Trung ương",
+                "slug": "HOCHIMINH"
+            },
+            "district": {
+                "id": "769",
+                "name": "Thành phố Thủ Đức",
+                "type": "Thành phố",
+                "province": "79"
+            },
+            "commune": {
+                "id": "26842",
+                "name": "Phường Tăng Nhơn Phú A",
+                "type": "Phường",
+                "district": "769"
+            },
+            "addressDetail": "abced",
+            "addressType": {
+                "id": 1,
+                "addressTypeName": "Nhà Riêng"
+            }
+        },
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 309000,
+        "discount": 80000,
+        "products": [
+            {
+                "choose": true,
+                "id": "7a3ba35df4ca43ba8edacaa44542da99",
+                "name": "Bộ Chuyển Đổi USB Wifi TP-Link Archer T2U Plus Công Suất Cao AC600 - Hàng Chính Hãng",
+                "slug": "bo-chuyen-doi-usb-wifi-tp-link-archer-t2u-plus-cong-suat-cao-ac600-hang-chinh-hang-p54439144",
+                "image": "https://salt.tikicdn.com/ts/product/61/75/66/bbe09e63ca8bac4e13f055348863fe42.jpg",
+                "price": 349000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660630386220,
+        "updatedAt": 1660630404090,
+        "id": "aef31c8e-8319-42a6-9cd1-23f79d04be16"
+    },
+    {
+        "idUser": "72dbacda-0da4-4b9b-abd9-3d8c2fdb123b",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": {
+            "id": "a7ce6ce7-babe-4a03-83a9-c66191676951",
+            "fullName": "Nguyễn Duy Dương",
+            "companyName": "Không",
+            "phoneNumber": "0312345687",
+            "province": {
+                "id": "79",
+                "name": "Thành phố Hồ Chí Minh",
+                "type": "Thành phố Trung ương",
+                "slug": "HOCHIMINH"
+            },
+            "district": {
+                "id": "769",
+                "name": "Thành phố Thủ Đức",
+                "type": "Thành phố",
+                "province": "79"
+            },
+            "commune": {
+                "id": "26842",
+                "name": "Phường Tăng Nhơn Phú A",
+                "type": "Phường",
+                "district": "769"
+            },
+            "addressDetail": "abced",
+            "addressType": {
+                "id": 1,
+                "addressTypeName": "Nhà Riêng"
+            }
+        },
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 110000,
+        "discount": 80000,
+        "products": [
+            {
+                "choose": true,
+                "id": "cc1c512205064ed9aa6a96cc31a29a43",
+                "name": "Thẻ nhớ IMOU chuyên dụng cho Camera 95 MB/s Class 10 32GB/64GB - Hàng Chính Hãng",
+                "slug": "the-nho-imou-chuyen-dung-cho-camera-95-mb-s-class-10-32gb-64gb-hang-chinh-hang-p153998709",
+                "image": "https://salt.tikicdn.com/ts/product/3c/07/9a/af801711bc1b62ec80637f2701d453d6.jpg",
+                "price": 150000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660630531769,
+        "updatedAt": 1660630793576,
+        "id": "e0680c59-0b84-476b-83dd-ca335d7560eb"
+    },
+    {
+        "idUser": "20b80ec5-300b-4a33-90c9-e846df058db1",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 5671000,
+        "discount": 0,
+        "products": [
+            {
+                "choose": true,
+                "id": "c0000c9ba7d948f396085454db51bb6a",
+                "name": "Ổ Cứng SSD Kingston A400 (240GB) - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/ts/product/06/d0/00/9df3937c390fcc0b66161f4dbe783757.jpg",
+                "price": 695000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "f203661ba7c94bb2891b071534d5d0aa",
+                "name": "Tã/bỉm quần Bobby Mega Jumbo Lõi nén thần kì 3mm - Tặng 12 miếng trong gói",
+                "image": "https://salt.tikicdn.com/media/catalog/producttmp/21/1d/df/804fac7470690b3942c44bc7ac1530e0.jpg",
+                "price": 656000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "9fb4ca8325e34716bb4040474b1e8ff3",
+                "name": "Điện Thoại Xiaomi Redmi 10 4GB/128GB - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/ts/product/4a/be/ec/a65c067d6c22ae48eb3ea400247c4c0d.png",
+                "price": 4290000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660630776700,
+        "updatedAt": 1660630803915,
+        "id": "1d103f90-1980-4979-8547-9bd3d3a8e1cb"
+    },
+    {
+        "idUser": "20b80ec5-300b-4a33-90c9-e846df058db1",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 1134000,
+        "discount": 0,
+        "products": [
+            {
+                "choose": true,
+                "id": "0baa459935254feb80fe60d2f4af9848",
+                "name": "Bàn chải nhà tắm, cọ bồn rửa Parroti Clever CR01",
+                "image": "https://salt.tikicdn.com/ts/product/13/fa/df/4ff5a01f99d7599c45b053aa56979f06.jpg",
+                "price": 99000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "cc1c512205064ed9aa6a96cc31a29a43",
+                "name": "Thẻ nhớ IMOU chuyên dụng cho Camera 95 MB/s Class 10 32GB/64GB - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/ts/product/3c/07/9a/af801711bc1b62ec80637f2701d453d6.jpg",
+                "price": 150000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "e0e30648321b4b299976f8b577a26bd2",
+                "name": "Bột thông tắc cống, bồn cầu, bồn rửa bát, đường ống cực mạnh HGO Super 250g",
+                "image": "https://salt.tikicdn.com/ts/product/a9/33/cf/249834fbb91e38b83e93b30aec3d9fac.jpg",
+                "price": 55000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "f203661ba7c94bb2891b071534d5d0aa",
+                "name": "Tã/bỉm quần Bobby Mega Jumbo Lõi nén thần kì 3mm - Tặng 12 miếng trong gói",
+                "image": "https://salt.tikicdn.com/media/catalog/producttmp/21/1d/df/804fac7470690b3942c44bc7ac1530e0.jpg",
+                "price": 656000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "e4f926273e5e487789853f5aaaef5b03",
+                "name": "Túi Chống Sốc Macbook Laptop TCS - Xám Đậm",
+                "image": "https://salt.tikicdn.com/ts/product/fa/db/92/d942c030732dcd3bf6c7794b0eab3286.jpg",
+                "price": 144000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660631000596,
+        "updatedAt": 1660631016121,
+        "id": "e0a601b4-7132-4558-b354-2ce2f83de1bf"
+    },
+    {
+        "idUser": "20b80ec5-300b-4a33-90c9-e846df058db1",
+        "type": {
+            "id": 4,
+            "name": "Đã giao"
+        },
+        "address": null,
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 812900,
+        "discount": 0,
+        "products": [
+            {
+                "choose": true,
+                "id": "2c015ca6ebc948d4a6a280f199b9d8db",
+                "name": "Camera IP Wifi Ezviz C6N CS-CV246 + Thẻ nhớ Ezviz 32GB - Hàng Chính Hãng",
+                "image": "https://salt.tikicdn.com/ts/product/78/8f/b5/1d655961ac88a410c4ecb3e1289ffa3d.jpg",
+                "price": 599900,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "3ec26d86e570477d92a0bb264dc555d4",
+                "name": "Combo Viên tẩy bồn cầu 55G x 3 VIM Power 5 hương Chanh Sạch Khuẩn Thơm Mát suốt 30 ngày",
+                "image": "https://salt.tikicdn.com/media/catalog/producttmp/e1/1a/60/59984da9051be34faf4c8f97d882c70d.jpg",
+                "price": 84000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "d0259b9783c84bdb82d663e9f37a4dc5",
+                "name": "Keo dán giày thể thao siêu dính dùng nhiệt trong suốt Ximo",
+                "image": "https://salt.tikicdn.com/ts/product/18/70/47/d1742f08846e73f80bb2c55c754c35ce.jpg",
+                "price": 39000,
+                "quantity": 1,
+                "discount": 0
+            },
+            {
+                "choose": true,
+                "id": "edb3d4c77d23494582fa678d78244d0d",
+                "name": "Dép cói, mây đan đế chống trượt đi trong nhà, trong văn phòng, trong khách sạn , freesize, màu săc họa tiết giao ngẫu nhiên",
+                "image": "https://salt.tikicdn.com/ts/product/96/28/7c/e49e6283ee7ce5b19e7d90329f20fd4c.jpg",
+                "price": 60000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660631389270,
+        "updatedAt": 1660631401343,
+        "id": "437fd270-435b-4526-a722-9d4019d845af"
+    },
+    {
+        "idUser": "72dbacda-0da4-4b9b-abd9-3d8c2fdb123b",
+        "type": {
+            "id": 2,
+            "name": "Đang xử lý"
+        },
+        "address": {
+            "id": "a7ce6ce7-babe-4a03-83a9-c66191676951",
+            "fullName": "Nguyễn Duy Dương",
+            "companyName": "Không",
+            "phoneNumber": "0312345687",
+            "province": {
+                "id": "79",
+                "name": "Thành phố Hồ Chí Minh",
+                "type": "Thành phố Trung ương",
+                "slug": "HOCHIMINH"
+            },
+            "district": {
+                "id": "769",
+                "name": "Thành phố Thủ Đức",
+                "type": "Thành phố",
+                "province": "79"
+            },
+            "commune": {
+                "id": "26842",
+                "name": "Phường Tăng Nhơn Phú A",
+                "type": "Phường",
+                "district": "769"
+            },
+            "addressDetail": "abced",
+            "addressType": {
+                "id": 1,
+                "addressTypeName": "Nhà Riêng"
+            }
+        },
+        "shipping": {
+            "id": "shipping1",
+            "display": "Giao hàng nhanh"
+        },
+        "payment": {
+            "id": 1,
+            "display": "Thanh toán tiền mặt khi nhận hàng",
+            "value": 1,
+            "image": "https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-cod.svg"
+        },
+        "feeShip": 40000,
+        "totalPrice": 110000,
+        "discount": 80000,
+        "products": [
+            {
+                "choose": true,
+                "id": "cc1c512205064ed9aa6a96cc31a29a43",
+                "name": "Thẻ nhớ IMOU chuyên dụng cho Camera 95 MB/s Class 10 32GB/64GB - Hàng Chính Hãng",
+                "slug": "the-nho-imou-chuyen-dung-cho-camera-95-mb-s-class-10-32gb-64gb-hang-chinh-hang-p153998709",
+                "image": "https://salt.tikicdn.com/ts/product/3c/07/9a/af801711bc1b62ec80637f2701d453d6.jpg",
+                "price": 150000,
+                "quantity": 1,
+                "discount": 0
+            }
+        ],
+        "createdAt": 1660632540966,
+        "updatedAt": 1660632540966,
+        "id": "80293583-61fd-477e-ab99-53af7035ee2b"
+    }
 ]
