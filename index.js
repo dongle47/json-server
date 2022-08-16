@@ -25,7 +25,7 @@ server.get('/echo', (req, res) => {
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
-  if (req.method === 'POST') {
+  if (req.method === 'POST' && req.path !== "/myorders") {
     req.body.createdAt = Date.now();
     req.body.updatedAt = Date.now();
     req.body.id = faker.random.uuid();
