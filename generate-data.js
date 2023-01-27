@@ -283,27 +283,12 @@ const randomAddressList = (numberOfAddress) => {
 
 
 (() => {
-
-    // const productList = randomProductList(100);
-
-
-
-    var couponList = JSON.parse(fs.readFileSync('./static-data/coupons.json', 'utf8'));
-
-    var notificationList = JSON.parse(fs.readFileSync('./static-data/notifications.json', 'utf8'));
-
     var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
     var categoryList = JSON.parse(fs.readFileSync('./static-data/categories.json', 'utf8'));
+    var notificationList = JSON.parse(fs.readFileSync('./static-data/notifications.json', 'utf8'));
+    var couponList = JSON.parse(fs.readFileSync('./static-data/coupons.json', 'utf8'));
     var myOrderList = JSON.parse(fs.readFileSync('./static-data/myOrders.json', 'utf8'));
-    var aboutTiki = JSON.parse(fs.readFileSync('./static-data/aboutTiki.json', 'utf8'));
     var categorySpecify = JSON.parse(fs.readFileSync('./static-data/categorySpecify.json', 'utf8'));
-    var quickLink = JSON.parse(fs.readFileSync('./static-data/quickLink.json', 'utf8'));
-    var sliderKhuyenMai = JSON.parse(fs.readFileSync('./static-data/sliderKhuyenMai.json', 'utf8'));
-    var sliderThuongHieu = JSON.parse(fs.readFileSync('./static-data/sliderThuongHieu.json', 'utf8'));
-    var suggestions = JSON.parse(fs.readFileSync('./static-data/suggestions.json', 'utf8'));
-    var supportCustomer = JSON.parse(fs.readFileSync('./static-data/supportCustomer.json', 'utf8'));
-    var wishList = JSON.parse(fs.readFileSync('./static-data/wishList.json', 'utf8'));
-    var myReviews = JSON.parse(fs.readFileSync('./static-data/myReviews.json', 'utf8'));
 
     const db = {
         products: productList,
@@ -311,19 +296,11 @@ const randomAddressList = (numberOfAddress) => {
         notifications: notificationList,
         coupons: couponList,
         myOrders: myOrderList,
-        aboutTiki: aboutTiki,
         categorySpecify: categorySpecify,
-        quickLink: quickLink,
-        suggestions: suggestions,
-        supportCustomer: supportCustomer,
-        wishList: wishList,
-        myReviews: myReview
     }
 
     fs.writeFile("db.json", JSON.stringify(db), () => {
         console.log("Generate data successfully");
     });
 })();
-
-
 
