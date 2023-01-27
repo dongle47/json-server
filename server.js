@@ -14,6 +14,7 @@ const server = jsonServer.create();
 const router = jsonServer.router(dbFile);
 
 const middlewares = jsonServer.defaults();
+
 server.use(middlewares);
 
 server.get('/echo', (req, res) => {
@@ -44,8 +45,6 @@ server.use((req, res, next) => {
 
 // Custom output for LIST with pagination
 router.render = (req, res) => {
-  // Check GET with pagination
-  // If yes, custom output
   const headers = res.getHeaders();
 
   const totalCountHeader = headers['x-total-count'];
@@ -69,7 +68,6 @@ router.render = (req, res) => {
   res.jsonp(res.locals.data);
 };
 
-// Use default router
 server.use('/api', router);
 
 const PORT = process.env.PORT || 5002;
