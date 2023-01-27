@@ -1,8 +1,8 @@
 
-const faker = require("faker")
+const { faker } = require('@faker-js/faker');
 const fs = require("fs")
 
-faker.locale = 'vi'
+faker.locale = 'en'
 
 function padTo2Digits(num) {
     return num.toString().padStart(2, '0');
@@ -114,13 +114,43 @@ const randomNotificationList = (numberOfNotifications) => {
     return notificationList;
 };
 
+const randomStudentList = (numberOfStudents) => {
+    if (numberOfStudents <= 0) return [];
+
+    const studentList = [];
+
+    var cityList = JSON.parse(fs.readFileSync('./static-data/cities.json', 'utf8'));
+    var genders = ['male', 'female'];
+
+    // random data
+    Array.from(new Array(numberOfStudents)).forEach(() => {
+        const student = {
+            id: faker.datatype.uuid(),
+            name: faker.name.fullName(),
+            age: faker.datatype.number({ 'min': 20, 'max': 60 }),
+            mark: faker.datatype.number({ 'min': 0, 'max': 10, 'precision': 0.1 }),
+            gender: genders[faker.datatype.number({ 'min': 0, 'max': 1 })],
+            createdAt: Date.now(),
+            updateAt: Date.now(),
+            city: cityList[faker.datatype.number({ 'min': 0, 'max': 3 })].code
+        };
+
+        studentList.push(student);
+    });
+
+    return studentList;
+}
+
 (() => {
     // var productList = JSON.parse(fs.readFileSync('./static-data/products.json', 'utf8'));
     var productList = randomProductList(100);
+    var cityList = JSON.parse(fs.readFileSync('./static-data/cities.json', 'utf8'));
+    var studentList = randomStudentList(100)
 
     const db = {
         products: productList,
-
+        cities: cityList,
+        students: studentList
     }
 
     fs.writeFile("db.json", JSON.stringify(db), () => {

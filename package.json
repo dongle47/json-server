@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "faker": "^5.5.3",
     "json-server": "^0.17.0",
     "query-string": "^7.1.1"
   },
@@ -21,6 +20,7 @@
     "node": "16.13.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "nodemon": "^2.0.16"
   }
 }

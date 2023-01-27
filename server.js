@@ -1,7 +1,11 @@
 
 
 const jsonServer = require('json-server');
-const faker = require('faker')
+// const faker = require('faker')
+
+const { faker } = require('@faker-js/faker');
+
+
 const queryString = require('query-string');
 const fs = require("fs");
 
@@ -25,15 +29,9 @@ server.use(jsonServer.bodyParser);
 
 server.use((req, res, next) => {
   if (req.method === 'POST') {
-    if (req.path === "/api/myorders") {
-      req.body.createdAt = Date.now();
-      req.body.updatedAt = Date.now();
-    }
-    else {
-      req.body.createdAt = Date.now();
-      req.body.updatedAt = Date.now();
-      req.body.id = faker.random.uuid();
-    }
+    req.body.createdAt = Date.now();
+    req.body.updatedAt = Date.now();
+    req.body.id = faker.random.uuid();
 
   } else if (req.method === 'PATCH') {
     req.body.updatedAt = Date.now();
