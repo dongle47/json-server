@@ -314,14 +314,10 @@ const randomAddressList = (numberOfAddress) => {
         aboutTiki: aboutTiki,
         categorySpecify: categorySpecify,
         quickLink: quickLink,
-        sliderKhuyenMai: sliderKhuyenMai,
-        sliderThuongHieu: sliderThuongHieu,
         suggestions: suggestions,
         supportCustomer: supportCustomer,
         wishList: wishList,
-        myReviews: myReviews,
-
-
+        myReviews: myReview
     }
 
     fs.writeFile("db.json", JSON.stringify(db), () => {
